@@ -4,7 +4,7 @@ package string.easy
  * Time complexity O(s.length)
  * Space complexity O(1)
  */
-class `13RomanToInteger` {
+class T13RomanToInteger {
 
     fun romanToInt(s: String): Int {
         var result = 0
@@ -15,7 +15,7 @@ class `13RomanToInteger` {
             val cNext = if (i + 1 < s.length) s[i + 1] else null
 
             if (c == 'I' && cNext == 'V') {
-                result += 4;
+                result += 4
                 i++
             } else if (c == 'I' && cNext == 'X') {
                 result += 9

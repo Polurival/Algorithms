@@ -1,4 +1,5 @@
 /**
- * 13. Roman to Integer https://leetcode.com/problems/roman-to-integer/ - by myself 11.10.2019
+ * 13. Roman to Integer https://leetcode.com/problems/roman-to-integer/
+ * 38. Count and Say https://leetcode.com/problems/count-and-say/
  **/
 package string.easy;
