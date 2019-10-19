@@ -8,10 +8,11 @@ class T831MaskingPersonalInformationTest {
 
     @Test
     fun maskPII() {
-        assertEquals("l*****e@leetcode.com", T831MaskingPersonalInformation().maskPII("LeetCode@LeetCode.com"))
-        assertEquals("a*****b@qq.com", T831MaskingPersonalInformation().maskPII("AB@qq.com"))
+        val testClass = T831MaskingPersonalInformation()
+        assertEquals("l*****e@leetcode.com", testClass.maskPII("LeetCode@LeetCode.com"))
+        assertEquals("a*****b@qq.com", testClass.maskPII("AB@qq.com"))
 
-        assertEquals("***-***-7890", T831MaskingPersonalInformation().maskPII("1(234)567-890"))
-        assertEquals("+**-***-***-5678", T831MaskingPersonalInformation().maskPII("86-(10)12345678"))
+        assertEquals("***-***-7890", testClass.maskPII("1(234)567-890"))
+        assertEquals("+**-***-***-5678", testClass.maskPII("86-(10)12345678"))
     }
 }
