@@ -1,5 +1,7 @@
-package string.easy
+package easy
 
+import easy.T38CountAndSayRecursion
+import easy.T38CountAndSayTwoWhile
 import org.junit.Test
 import kotlin.test.assertEquals
 

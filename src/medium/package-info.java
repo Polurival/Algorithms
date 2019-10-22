@@ -1,4 +1,4 @@
 /**
  * 831. Masking Personal Information https://leetcode.com/problems/masking-personal-information/
  **/
-package string.medium;
+package medium;

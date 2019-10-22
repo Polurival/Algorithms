@@ -1,10 +1,10 @@
-package array.easy
+package easy
 
+import easy.T35SearchInsertPosition
+import easy.T35SearchInsertPositionBinarySearch
 import org.junit.Test
 
 import org.junit.Assert.*
-import java.util.*
-import kotlin.collections.ArrayList
 
 class T35SearchInsertPositionTest {
 

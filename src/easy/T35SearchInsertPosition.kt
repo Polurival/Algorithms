@@ -1,6 +1,8 @@
-package array.easy
+package easy
 
 /**
+ * Related Topics: Array, Binary Search
+ *
  * Time complexity O(nums.size)
  * Space complexity O(1)
  */

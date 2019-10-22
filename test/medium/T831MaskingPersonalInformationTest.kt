@@ -1,5 +1,6 @@
-package string.medium
+package medium
 
+import medium.T831MaskingPersonalInformation
 import org.junit.Test
 
 import org.junit.Assert.*

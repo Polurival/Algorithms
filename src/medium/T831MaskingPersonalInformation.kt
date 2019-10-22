@@ -1,6 +1,8 @@
-package string.medium
+package medium
 
 /**
+ * Related Topics: String
+ *
  * Time complexity O(S.length)
  * Space complexity O(1)
  */

@@ -1,6 +1,8 @@
-package string.easy
+package easy
 
 /**
+ * Related Topics: String
+ *
  * Time complexity O(n * countAndSay(n, "1").length)
  * Space complexity O(n)
  */
