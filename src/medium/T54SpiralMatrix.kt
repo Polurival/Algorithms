@@ -1,10 +1,12 @@
 package medium
 
 /**
+ * Related Topics: Array
+ *
  * Solution - go in cycle on borders of matrix narrowing borders after all 4 borders passed
  *
- * Time complexity O()
- * Space complexity O()
+ * Time complexity O(m*n)
+ * Space complexity O(1)
  */
 class T54SpiralMatrix {
 
