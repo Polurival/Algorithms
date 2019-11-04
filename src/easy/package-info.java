@@ -5,6 +5,7 @@
  * 242  Valid Anagram           https://leetcode.com/problems/valid-anagram/
  * 278  First Bad Version       https://leetcode.com/problems/first-bad-version/
  * 349  IntersectionOfTwoArrays https://leetcode.com/problems/intersection-of-two-arrays/
+ * 905  Sort Array By Parity    https://leetcode.com/problems/sort-array-by-parity/
  * 1160 Find Words That Can Be Formed by Characters https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/
  */
 package easy;
