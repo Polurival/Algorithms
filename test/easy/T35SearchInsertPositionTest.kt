@@ -1,7 +1,5 @@
 package easy
 
-import easy.T35SearchInsertPosition
-import easy.T35SearchInsertPositionBinarySearch
 import org.junit.Test
 
 import org.junit.Assert.*
