@@ -16,6 +16,7 @@ class RLECompressionTest {
         assertEquals("", compressor.compress(""))
         assertEquals("Z", compressor.compress("Z"))
         assertEquals("2H", compressor.compress("HH"))
+        assertEquals("JKF", compressor.compress("JKF"))
         assertEquals("4A3B2C", compressor.compress("AAAABBBCC"))
         assertEquals("ABC4D3E", compressor.compress("ABCDDDDEEE"))
         assertEquals("A2FBCE", compressor.compress("AFFBCE"))

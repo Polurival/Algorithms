@@ -31,13 +31,11 @@ class RandomSet {
     fun remove(value: Int) {
         hashMap[value]?.let { index ->
             val last = arrayDeque.removeLast()
-            if (last == value) {
-                hashMap.remove(value)
-            } else {
+            if (last != value) {
                 arrayDeque[index] = last
                 hashMap[last] = index
-                hashMap.remove(value)
             }
+            hashMap.remove(value)
             size--
         }
     }

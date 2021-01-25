@@ -20,9 +20,9 @@ class RLECompression {
             }
             return input
         }
-        var output = ""
+        val output = StringBuilder()
 
-        var prev: Char? = input[0]
+        var prev = input[0]
         var count = 1
         for (i in 1 until input.length) {
             if (input[i] !in 'A'..'Z') {
@@ -30,20 +30,20 @@ class RLECompression {
             }
             if (input[i] == prev) {
                 count++
-                if (i == input.lastIndex) {
-                    output += "" + count + prev
-                }
             } else if (count == 1) {
-                output += prev
-                if (i == input.lastIndex) {
-                    output += input[i]
-                }
+                output.append(prev)
+                prev = input[i]
             } else {
-                output += "" + count + prev
+                output.append(count).append(prev)
+                prev = input[i]
                 count = 1
             }
-            prev = input[i]
         }
-        return output
+        if (count > 1) {
+            output.append(count).append(prev)
+        } else {
+            output.append(prev)
+        }
+        return output.toString()
     }
 }
