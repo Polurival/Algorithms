@@ -1,9 +1,11 @@
 package greedy
 
+import java.util.ArrayDeque
+import java.util.ArrayList
 import java.util.PriorityQueue
 
 /**
- *
+ * Решение задачи перевода набора символов с их частотами в строке в оптимальные безпрефиксные коды
  *
  * @author Польщиков Юрий on 01/12/2020
  */
@@ -33,7 +35,7 @@ class HuffmanCodes {
     }
 
     fun getBinaryCodeFor(symbol: Char): String {
-        val result = arrayListOf<Byte>()
+        val result = ArrayList<Byte>()
         val visited = mutableSetOf<Node>()
 
         val rootNode = treeQueue.peek().root
@@ -54,7 +56,7 @@ class HuffmanCodes {
                 continue
             } else if (node.right == null) {
                 stack.removeLast()
-                result.removeLast()
+                result.removeAt(result.lastIndex)
                 continue
             }
             if (!visited.contains(node.right)) {
@@ -63,7 +65,7 @@ class HuffmanCodes {
                 result.add(1)
             } else {
                 stack.removeLast()
-                result.removeLast()
+                result.removeAt(result.lastIndex)
             }
         }
     }

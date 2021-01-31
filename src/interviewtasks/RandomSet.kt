@@ -1,6 +1,7 @@
 package interviewtasks
 
 import java.util.Random
+import java.util.Stack
 
 /**
  * Реализовать структуру данных со следующими операциями:
@@ -20,19 +21,20 @@ class RandomSet {
 
     private val random = Random()
     private val hashMap = HashMap<Int, Int>()
-    private val arrayDeque = ArrayDeque<Int>()
+    private val stack = Stack<Int>()
 
     fun add(value: Int) {
         hashMap[value] = size
-        arrayDeque.add(value)
+        stack.add(value)
         size++
     }
 
     fun remove(value: Int) {
         hashMap[value]?.let { index ->
-            val last = arrayDeque.removeLast()
+            val last = stack.pop()
             if (last != value) {
-                arrayDeque[index] = last
+                stack.add(index, last)
+                stack[index] = last
                 hashMap[last] = index
             }
             hashMap.remove(value)
@@ -42,6 +44,6 @@ class RandomSet {
 
     fun getRandom(): Int {
         val index = random.nextInt(size)
-        return arrayDeque[index]
+        return stack.elementAt(index)
     }
 }

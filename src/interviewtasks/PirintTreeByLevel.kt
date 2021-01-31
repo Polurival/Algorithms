@@ -7,10 +7,10 @@ package interviewtasks
  * @author Польщиков Юрий on 24/01/2021
  */
 fun printTreeByLevel(head: Node) {
-    var level = ArrayDeque<Node>()
+    var level = java.util.ArrayDeque<Node>()
     level.add(head)
     while (level.isNotEmpty()) {
-        val tempQueue = ArrayDeque<Node>()
+        val tempQueue = java.util.ArrayDeque<Node>()
         for (node in level) {
             print("${node.value} ")
             node.left?.let {
